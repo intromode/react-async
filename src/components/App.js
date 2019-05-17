@@ -9,12 +9,12 @@ import TopQuotes from './containers/TopQuotes';
 export default class App extends PureComponent{
   //quotes becomes string 
 
-
   render() {
     return (
       <>
-        <button>Top Quotes</button>
-        <TopQuotes />
+        <button type="submit" onClick={() => location.reload()}>Top Quotes</button>
+        <TopQuotes count={12} />
+        <TopQuotes count={12} />
       </>
     );
   }
